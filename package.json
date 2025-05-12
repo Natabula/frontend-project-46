@@ -13,11 +13,15 @@
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
   "bugs": {
     "url": "https://github.com/Natabula/frontend-project-46/issues"
   },
   "homepage": "https://github.com/Natabula/frontend-project-46#readme",
   "dependencies": {
-    "commander": "^13.1.0"
+    "commander": "^13.1.0",
+    "js-yaml": "^4.1.0"
   }
 }
