@@ -1,0 +1,27 @@
+name: SonarCloud
+
+on:
+  push:
+    branches:
+      - main  # или имя твоей основной ветки
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Shallow clones are not enough for SonarCloud
+      - name: Install dependencies
+        run: make install
+      - name: Lint code
+        run: make lint # Восстановленный шаг для линтинга кода
+      - name: Test and generate coverage report
+        run: make test-coverage
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2 # Используем sonarcloud-github-action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
