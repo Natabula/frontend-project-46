@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0  # Shallow clones are not enough for SonarCloud
       - name: Install dependencies
         run: make install
-      - name: Lint code
+      #- name: Lint code
         # run: make lint 
       - name: Test and generate coverage report
         run: make test-coverage
