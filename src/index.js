@@ -1,7 +1,7 @@
 import path from 'path';
 import { readFileSync } from 'fs';
 import _ from 'lodash';
-import parse from './parse.js'
+import parse from './parsers.js'
 
 const getFullPath = (filepath) => path.resolve(process.cwd(), filepath);
 const readFile = (filepath) => { 
