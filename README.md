@@ -8,3 +8,7 @@
 
 ### Example comparing file1.yml with file2.yml
 [![asciicast](https://asciinema.org/a/tXDPHLy196w20gEez5WYZacCn.svg)](https://asciinema.org/a/tXDPHLy196w20gEez5WYZacCn)
+
+### Example comparing file1.json with file2.json
+[![asciicast](https://asciinema.org/a/8j00oVerlzm9DLKF8BnwfOYyx.svg)](https://asciinema.org/a/8j00oVerlzm9DLKF8BnwfOYyx)
+
