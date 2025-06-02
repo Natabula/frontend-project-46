@@ -12,3 +12,6 @@
 ### Example comparing file1.json with file2.json
 [![asciicast](https://asciinema.org/a/8j00oVerlzm9DLKF8BnwfOYyx.svg)](https://asciinema.org/a/8j00oVerlzm9DLKF8BnwfOYyx)
 
+### Example comparing file1.json with file2.json format plain 
+[![asciicast](https://asciinema.org/a/4jsG9dgnpMebHqlqqhUKlOk3c.svg)](https://asciinema.org/a/4jsG9dgnpMebHqlqqhUKlOk3c)
+
