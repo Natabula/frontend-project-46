@@ -15,6 +15,8 @@ const testData = [
   ['file1.yaml', 'file2.yaml', 'stylish', 'expectedResultStylish.txt'],
   ['file1.yml', 'file2.yml', 'plain', 'expectedResultPlain.txt'],
   ['file1.json', 'file2.yaml', 'plain', 'expectedResultPlain.txt'],
+  ['file1.json', 'file2.yml', 'json', 'expectedResultJson.txt'],
+  ['file1.yaml', 'file2.yml', 'json', 'expectedResultJson.txt'],
 ];
 
 describe.each(testData)('Comparison check:', (fileName1, fileName2, format, expectedResult) => {
